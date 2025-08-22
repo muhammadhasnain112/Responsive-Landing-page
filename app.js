@@ -6,16 +6,17 @@ let flag = false
 let nav = document.getElementById('navbar')
 document.addEventListener('scroll', () => {
     // console.log(window.scrollY);
-    if(window.scrollY > 300){
+    if (window.scrollY > 300) {
         nav.style.backgroundColor = `var(--background-color)`
         togle.style.marginTop = `${window.scrollY}px`
         nav.style.position = `fixed`
-    }else{
+    } else {
+        togle.style.marginTop = `$10px`
         nav.style.backgroundColor = ``
         nav.style.position = `static`
-        
+
     }
-    
+
 })
 toglebar.addEventListener('click', () => {
     if (flag) {
@@ -28,7 +29,9 @@ toglebar.addEventListener('click', () => {
 })
 
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#body'),
-    smooth: true
-});
+
+// mousemove()
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#body'),
+//     smooth: true
+// });

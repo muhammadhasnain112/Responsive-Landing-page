@@ -23,13 +23,13 @@ header {
 }
 
 nav {
-    padding: 2vw 2vw;
+    padding: 2vw 10vw;
     height: 7vw;
     border-bottom: 1px solid rgba(128, 128, 128, 0.486);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 100;
     position: static;
 }
@@ -38,26 +38,48 @@ ul {
     list-style: none;
     display: flex;
     color: rgb(200, 198, 198);
-    gap: 2.5vw;
+    gap: 3vw;
     font-family: rubik;
 }
 
 nav>img {
-    height: 4vw;
+    height: 3.5vw;
 }
 
 #firstSec {
     display: flex;
     justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+}
+
+#innerfirst {
+    padding-left: 4.7vw;
+}
+
+#firstSec>div {
+    /* display: flex; */
+    /* border: 1px solid red; */
+    /* justify-content: center; */
+}
+
+#firstSec>div>h1 {
+    margin-top: 30vh !important;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: 50vw;
+
+
+
 }
 
 #firstSec h1 {
-    margin-top: 10vh;
-    font-family: Oswald;
+    margin-top: 20vh !important;
+    font-family: Oswald, sans-serif;
     margin-left: 5vw;
-    font-size: 10vh;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 4vw !important;
+    font-weight: 600;
+    letter-spacing: -1px !important;
+    line-height: 60px;
     font-size: 4vw;
 }
 
@@ -69,8 +91,8 @@ span {
     border-left: 3px solid var(--primary-color);
     font-family: Rubik, sans-serif !important;
     padding: 0.5vw 2vw;
-    font-size: 2vw !important;
-    line-height: 2em;
+    font-size: 1.4vw !important;
+    line-height: 1.3em;
     font-family: Rubik;
     margin-left: 5vw;
     margin-top: 5vh;
@@ -90,6 +112,10 @@ span {
     align-items: center;
     color: var(--text-color);
     background-color: var(--button-color);
+}
+
+.author {
+    height: 55vw;
 }
 
 i {
@@ -122,14 +148,15 @@ i {
     display: flex;
     margin-top: 20vh;
     flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 1vw 4.5vw;
+    justify-content: space-evenly;
 }
 
 .cards div {
-    height: 35vh;
-    width: 20rem;
+    height: 34vh;
+    width: 13.5em;
     margin-bottom: 10vh;
-    padding: 5px;
+    padding: 0vw 1vw;
     box-shadow: 0px 0px 5px 5px rgba(72, 68, 68, 0.114);
     background-color: var(--background-color);
     text-align: center;
@@ -149,27 +176,33 @@ i {
 .cards h1 {
     margin-top: 3vh;
     color: var(--primary-color);
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: oswald;
 }
 
 .cards p {
-    line-height: 29px;
+    /* line-height: 29px; */
     font-family: rubik;
     margin-top: 2vw;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1vw;
+    /* line-height: 20px; */
 }
 
 section {
     height: 100vh;
+    padding: 2vw 4.6vw;
     display: flex;
 }
 
+section img {
+    height: 25vw;
+
+}
+
 .about {
-    height: 80vh;
-    width: 30vw;
-    left: 8vw;
+    height: 75vh;
+    width: 25vw;
+    left: 10vw;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -178,7 +211,7 @@ section {
 
 .failure,
 .experience {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 600;
     line-height: 55px;
 }
@@ -186,6 +219,7 @@ section {
 .sectioninner {
     font-family: Oswald;
     margin-top: 12vh;
+    margin-left: 9vw;
 }
 
 .sectioninner p {
@@ -289,13 +323,13 @@ li:hover {
 }
 
 aside {
-    height: 100vh;
-
+    /* height: 100vh; */
 }
 
 .asideinner {
     display: flex;
     justify-content: space-around;
+
 
 }
 
@@ -321,6 +355,8 @@ aside {
 #photos {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 8vw;
     margin-top: 10vh;
     justify-content: space-around;
 }
@@ -422,6 +458,7 @@ main {
 
 #bigcards {
     display: flex;
+    padding: 1vw 6vw;
     justify-content: space-around;
     margin-top: 15vh;
     height: 100vh;
@@ -460,12 +497,8 @@ main {
     height: 8vh;
 }
 
-/* 
-#bigcards div:hover {
-    color: white !important;
-    background-color: var(--button-color);
-    transition: all 0.4s ease-in-out;
-} */
+
+
 
 .cardbtn:hover {
     background-color: #0B0D0E;
@@ -495,6 +528,7 @@ main {
     display: flex;
     justify-content: space-around;
     height: 100vh;
+    padding: 1vw 8vw;
     margin-top: 20vh;
     font-family: rubik;
 }
@@ -573,9 +607,18 @@ footer div {
 }
 
 footer ul {
+    display: flex;
+    justify-content: center;
     margin-top: 25vh;
-    margin-left: 30%;
-    /* text-align: center; */
+    /* margin-left: 22%; */
+    /* border: 1px solid saddlebrown; */
+}
+
+footer li {
+    /* text-align: center !important; */
+    /* margin-top: 25vh; */
+    font-size: 1.4vw !important;
+
 }
 
 footer p {
@@ -611,6 +654,16 @@ footer li {
         /* height: 500vh; */
     }
 
+    section {
+        margin-top: 10vh;
+    }
+
+    .about {
+        margin-top: 10vh;
+        width: 60vw !important;
+        height: 75vh !important;
+    }
+
     #lastcard {
         flex-direction: column;
         gap: 20px;
@@ -638,7 +691,8 @@ footer li {
         flex-direction: column;
     }
 
-    .cards {
+    .cards p {
+        font-size: 1.7vw;
         /* flex-direction: column; */
 
     }
@@ -766,7 +820,7 @@ footer li {
     }
 
     .skills {
-        margin-top: 115vh;
+        /* margin-top: 11vh; */
     }
 
     main {
@@ -847,7 +901,7 @@ html.has-scroll-dragging {
     transform: scaleX(1.45);
 }
 
-.c-scrollbar:hover, 
+.c-scrollbar:hover,
 .has-scroll-scrolling .c-scrollbar,
 .has-scroll-dragging .c-scrollbar {
     opacity: 1;
